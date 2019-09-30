@@ -10,6 +10,7 @@ loadlib.each do |meaning, emoticons|
  emotlib
  end
 
+load_library('./lib/emoticos.yml')
 
 def get_japanese_emoticon(file_path = './lib/emoticons.yml/, english_emoticon)
   library = load_library(file_path)
