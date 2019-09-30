@@ -1,7 +1,12 @@
 require "yaml"
 
 def load_library
- emotlib = YAML.load_file('emoticons.yml')
+loadlib = YAML.load_file('emoticons.yml')
+emotlib = "get_meaning => {}, "get_emoticon" = {}}
+loadlib.each do |meaning, emoticons|
+   emotlib["get_meaning"][emoticons[1]] = meaning
+   emotlib["get_emoticon"][emoticon[0]] = emoticons[1]
+ end
  emotlib
  end
 
