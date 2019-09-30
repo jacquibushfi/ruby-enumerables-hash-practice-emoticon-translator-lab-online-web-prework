@@ -10,9 +10,9 @@ loadlib.each do |meaning, emoticons|
  emotlib
  end
 
-load_library('./lib/emoticos.yml')
+load_library('./lib/emoticons.yml')
 
-def get_japanese_emoticon(file_path = './lib/emoticons.yml/, english_emoticon)
+def get_japanese_emoticon(file_path = './lib/emoticons.yml/, english_emoticon')
   library = load_library(file_path)
   if library["get_emoticon"].include?(english_emoticon)
     library["get_emoticon"[english_emoticon]
